@@ -1,0 +1,174 @@
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f4f8;
+    color: #222;
+    font-size: 100%;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #15181b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    margin: 5px 0 15px;
+}
+
+/* Botões de acessibilidade */
+.acessibilidade button {
+    margin: 5px;
+    padding: 10px 16px;
+    background-color: white;
+    color: #1565c0;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.acessibilidade button:hover {
+    background-color: #dbeafe;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #ffca28;
+    outline-offset: 3px;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #16324f;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #90caf9;
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* Cartões das notícias */
+article {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+article h2 {
+    color: #1565c0;
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+.data {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Imagens */
+article img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 260px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #16324f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Modo de alto contraste */
+body.alto-contraste {
+    background-color: black;
+    color: white;
+}
+
+.alto-contraste header,
+.alto-contraste nav,
+.alto-contraste footer {
+    background-color: black;
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+.alto-contraste article {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    box-shadow: none;
+}
+
+.alto-contraste article h2,
+.alto-contraste .data {
+    color: yellow;
+}
+
+.alto-contraste nav a {
+    color: yellow;
+}
+
+.alto-contraste .acessibilidade button {
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        margin: 5px 8px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    article img {
+        max-width: 100%;
+    }
+}
